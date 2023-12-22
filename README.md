@@ -23,7 +23,7 @@ $ npm install
 ### 2. Setup Database and Run
 - Create your local database (SQL)
 - Create `.env` file inside backend directory
-- Setup your database configuration on `.env`, the example of database configuration can be seen on `Backend\.env.example`
+- Setup your database configuration on `.env`, the example of database configuration can be seen on `Backend/.env.example`
 - After everything has been set, run the backend by running this command on your backend directory
 ```bash
 $ nodemon index
