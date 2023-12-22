@@ -11,16 +11,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
         rel="stylesheet">
-    <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="navbar"></div>
     <div class="background-container">
         <div class="card-container">
             <div class="content-title">
                 <p class="welcome-style">Welcome</p>
-                <p class="full-name" id="name">Faishal Januarahman</p>
+                <p class="full-name" id="full-name"></p>
             </div>
             <div class="content-wrapper">
                 <div class="content-container">
@@ -40,10 +38,12 @@
                     <p id="phoneNumber"></p>
                 </div>
             </div>
+            <input class="button-logout" type="button" value="Logout" id="logout" onclick="logout()">
             
         </div>
     </div>
 
+    <script src="script.js"></script>
 
 </body>
 

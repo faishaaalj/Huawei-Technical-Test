@@ -44,7 +44,7 @@ function notificationFailed(message) {
 function setStorageItem(data) {
     console.log(data.user)
     localStorage.setItem("accessToken", data.accessToken);
-    localStorage.setItem("user", data.user);
+    sessionStorage.setItem("user", JSON.stringify(data.user));
 }
 
 function emailValidation(email) {

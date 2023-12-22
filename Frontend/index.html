@@ -20,7 +20,7 @@
             <p class="register-title">Create Account</p>
             <div id="notif-success" class="success-notif"></div>
             <div id="notif-error" class="error-notif"></div>
-            <form class="form-container" onsubmit="formValidation()">
+            <form id="form-register" class="form-container" onsubmit="formValidation()">
                 <div class="input-container">
                     <label class="label-custom" for="name">Name</label>
                     <input type="text" class="input-custom" id="name" name="name" placeholder="Enter your name"/>
@@ -52,7 +52,7 @@
             </form>
             <div class="additional-container">
                 <span>Already have an account?
-                    <a href="login/login.html" class="link-color">Login</a>
+                    <a href="login/login.html" class="link-color" id="link-login">Login</a>
                 </span>
             </div>
         </div>
