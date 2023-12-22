@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="background-container">
+        <div class="card-container">
+            <p class="register-title">Create Account</p>
+            <div id="notif-success" class="success-notif"></div>
+            <div id="notif-error" class="error-notif"></div>
+            <form class="form-container" onsubmit="formValidation()">
+                <div class="input-container">
+                    <label class="label-custom" for="name">Name</label>
+                    <input type="text" class="input-custom" id="name" name="name" placeholder="Enter your name"/>
+                    <p id="name-error" class="error-message"></p>
+                </div>
+                <div class="input-container">
+                    <label class="label-custom" for="email">Email</label>
+                    <input type="text" class="input-custom" id="email" name="email" placeholder="Enter your email"/>
+                    <p id="email-error" class="error-message"></p>
+                </div>
+                <div class="input-container">
+                    <label class="label-custom" for="phoneNumber">Phone Number</label>
+                    <input type="tel" class="input-custom" id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number"/>
+                    <p id="number-error" class="error-message"></p>
+                </div>
+                <div class="input-container">
+                    <label class="label-custom" for="password">Password</label>
+                    <input type="password" class="input-custom" id="password" name="password" placeholder="Enter password"/>
+                    <p id="password-error" class="error-message"></p>
+                </div>
+                <div class="input-container">
+                    <label class="label-custom" for="confirmPassword">Confirm Password</label>
+                    <input type="password" class="input-custom" id="confirmPassword" name="confirmPassword" placeholder="Confirm password"/>
+                    <p id="confirm-password-error" class="error-message"></p>
+                </div>
+                <div class="button-container">
+                    <input type="submit" value="Register"/>
+                </div>  
+            </form>
+            <div class="additional-container">
+                <span>Already have an account?
+                    <a href="login/login.html" class="link-color">Login</a>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
